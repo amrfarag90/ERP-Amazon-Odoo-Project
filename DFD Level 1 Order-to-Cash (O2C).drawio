@@ -1,0 +1,146 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.0.6 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36" version="28.0.6">
+  <diagram name="Page-1" id="a-RtsHjiVN9WkG6xNadF">
+    <mxGraphModel dx="1810" dy="825" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="O2C-E1" value="Customer" style="whiteSpace=wrap;strokeWidth=2;strokeColor=#FFFFFF;fillColor=#76608a;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="100" y="350" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="O2C-E2" value="Payment Gateway" style="whiteSpace=wrap;strokeWidth=2;strokeColor=#FFFFFF;fillColor=#76608a;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="903" y="357" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="O2C-E3" value="Warehouse" style="whiteSpace=wrap;strokeWidth=2;strokeColor=#FFFFFF;fillColor=#76608a;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="-215" y="637" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="O2C-E4" value="Finance Department" style="whiteSpace=wrap;strokeWidth=2;strokeColor=#FFFFFF;fillColor=#76608a;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="400" y="1340" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="O2C-P1" value="1.0 Manage Customer Order" style="rounded=1;arcSize=20;strokeWidth=2;strokeColor=#FFFFFF;fillColor=#a20025;" vertex="1" parent="1">
+          <mxGeometry x="400" y="200" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="O2C-P2" value="2.0 Process Payment" style="rounded=1;arcSize=20;strokeWidth=2;strokeColor=#FFFFFF;fillColor=#a20025;" vertex="1" parent="1">
+          <mxGeometry x="400" y="350" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="O2C-P3" value="3.0 Fulfill Order" style="rounded=1;arcSize=20;strokeWidth=2;strokeColor=#FFFFFF;fillColor=#a20025;" vertex="1" parent="1">
+          <mxGeometry x="400" y="600" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="O2C-P4" value="4.0 Manage Billing" style="rounded=1;arcSize=20;strokeWidth=2;strokeColor=#FFFFFF;fillColor=#a20025;" vertex="1" parent="1">
+          <mxGeometry x="400" y="900" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="O2C-P5" value="5.0 Reconcile Payment" style="rounded=1;arcSize=20;strokeWidth=2;strokeColor=#FFFFFF;fillColor=#a20025;" vertex="1" parent="1">
+          <mxGeometry x="400" y="1150" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="O2C-DS1" value="D1: Customer Orders" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=2;whiteSpace=wrap;strokeColor=#FFFFFF;fillColor=#6a00ff;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="848" y="200" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="O2C-DS2" value="D2: Inventory" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=2;whiteSpace=wrap;strokeColor=#FFFFFF;fillColor=#6a00ff;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="893" y="614" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="O2C-DS3" value="D3: Invoices" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=2;whiteSpace=wrap;strokeColor=#FFFFFF;fillColor=#6a00ff;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="960" y="892" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="O2C-DS4" value="D4: Financial Records" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=2;whiteSpace=wrap;strokeColor=#FFFFFF;fillColor=#6a00ff;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="950" y="1142" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="O2C-F1" value="Order Details" style="curved=1;startArrow=none;endArrow=block;rounded=0;strokeColor=#FFFFFF;" edge="1" parent="1" source="O2C-E1" target="O2C-P1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="250" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="O2C-F2" value="Order Info" style="curved=1;startArrow=none;endArrow=block;rounded=0;strokeColor=#FFFFFF;" edge="1" parent="1" source="O2C-P1" target="O2C-P2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="O2C-F3" value="Stock Status (read)" style="curved=1;startArrow=none;endArrow=block;rounded=0;strokeColor=#FFFFFF;" edge="1" parent="1" source="O2C-DS2" target="O2C-P2">
+          <mxGeometry x="-0.5007" y="-7" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="750" y="450" />
+              <mxPoint x="655" y="527" />
+              <mxPoint x="550" y="450" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="O2C-F4" value="Payment Authorization Request" style="curved=1;startArrow=none;endArrow=block;rounded=0;strokeColor=#FFFFFF;" edge="1" parent="1" source="O2C-P2" target="O2C-E2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="O2C-F5" value="Payment Authorization/Denial" style="curved=1;startArrow=none;endArrow=block;rounded=0;strokeColor=#FFFFFF;entryX=1;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="O2C-E2" target="O2C-P2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="800" y="450" />
+              <mxPoint x="500" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="O2C-F6" value="Authorized Order" style="curved=1;startArrow=none;endArrow=block;rounded=0;strokeColor=#FFFFFF;" edge="1" parent="1" source="O2C-P2" target="O2C-P3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="O2C-F7" value="Picking List" style="curved=1;startArrow=none;endArrow=block;rounded=0;strokeColor=#FFFFFF;" edge="1" parent="1" source="O2C-P3" target="O2C-E3">
+          <mxGeometry x="-0.6589" y="-2" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="250" y="630" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="O2C-F8" value="Inventory Update (Shipment)" style="curved=1;startArrow=none;endArrow=block;rounded=0;strokeColor=#FFFFFF;" edge="1" parent="1" source="O2C-E3" target="O2C-P3">
+          <mxGeometry x="0.421" y="6" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="250" y="700" />
+              <mxPoint x="450" y="700" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="O2C-F9" value="Inventory Deduction (write)" style="curved=1;startArrow=none;endArrow=block;rounded=0;strokeColor=#FFFFFF;" edge="1" parent="1" source="O2C-P3" target="O2C-DS2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="O2C-F10" value="Shipment Confirmation" style="curved=1;startArrow=none;endArrow=block;rounded=0;strokeColor=#FFFFFF;" edge="1" parent="1" source="O2C-P3" target="O2C-P4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="O2C-F11" value="Shipment Notification" style="curved=1;startArrow=none;endArrow=block;rounded=0;strokeColor=#FFFFFF;" edge="1" parent="1" source="O2C-P4" target="O2C-E1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="930" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="O2C-F12" value="Invoice" style="curved=1;startArrow=none;endArrow=block;rounded=0;strokeColor=#FFFFFF;" edge="1" parent="1" source="O2C-P4" target="O2C-E1">
+          <mxGeometry x="-0.2555" y="-1" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="980" />
+              <mxPoint x="150" y="980" />
+              <mxPoint x="-51" y="881" />
+              <mxPoint x="150" y="410" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="O2C-F13" value="Invoice Details" style="curved=1;startArrow=none;endArrow=block;rounded=0;strokeColor=#FFFFFF;" edge="1" parent="1" source="O2C-P4" target="O2C-P5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="O2C-F14" value="Payment Confirmation" style="curved=1;startArrow=none;endArrow=block;rounded=0;strokeColor=#FFFFFF;entryX=0.06;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.05;exitY=0.033;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="O2C-E4" target="O2C-P5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="O2C-F15" value="Data for Reconciliation" style="curved=1;startArrow=none;endArrow=block;rounded=0;strokeColor=#FFFFFF;entryX=0.625;entryY=0.017;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.815;exitY=0.95;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="O2C-P5" target="O2C-E4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="530" y="1250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="O2C-F16" value="Payment Record (write)" style="curved=1;startArrow=none;endArrow=block;rounded=0;strokeColor=#FFFFFF;" edge="1" parent="1" source="O2C-P5" target="O2C-DS4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="O2C-FC1" value="New Order (write)" style="curved=1;startArrow=none;endArrow=block;rounded=0;strokeColor=#FFFFFF;" edge="1" parent="1" source="O2C-P1" target="O2C-DS1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="O2C-FC2" value="New Invoice (write)" style="curved=1;startArrow=none;endArrow=block;rounded=0;strokeColor=#FFFFFF;" edge="1" parent="1" source="O2C-P4" target="O2C-DS3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

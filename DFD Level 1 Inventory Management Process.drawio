@@ -1,0 +1,118 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.0.6 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36" version="28.0.6">
+  <diagram name="Page-1" id="4pB4xr_sD_r1S5oMkdMp">
+    <mxGraphModel dx="1810" dy="825" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="INV-E1" value="Supplier / Vendor" style="whiteSpace=wrap;strokeWidth=2;strokeColor=#FFFFFF;fillColor=#76608a;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="-77" y="360" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="INV-E2" value="P2P Process (External)" style="whiteSpace=wrap;strokeWidth=2;strokeColor=#FFFFFF;fillColor=#76608a;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="-50" y="204" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="INV-E3" value="Warehouse" style="whiteSpace=wrap;strokeWidth=2;strokeColor=#FFFFFF;fillColor=#76608a;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="-118" y="592" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="INV-E4" value="O2C Process (External)" style="whiteSpace=wrap;strokeWidth=2;strokeColor=#FFFFFF;fillColor=#76608a;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="-127" y="729" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="INV-E5" value="Employee / Department User" style="whiteSpace=wrap;strokeWidth=2;strokeColor=#FFFFFF;fillColor=#76608a;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="-53" y="988" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="INV-E6" value="Finance Department" style="whiteSpace=wrap;strokeWidth=2;strokeColor=#FFFFFF;fillColor=#76608a;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="850" y="1050" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="INV-P1" value="1.0 Monitor Stock" style="rounded=1;arcSize=20;strokeWidth=2;strokeColor=#FFFFFF;fillColor=#a20025;" vertex="1" parent="1">
+          <mxGeometry x="400" y="100" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="INV-P2" value="2.0 Manage Replenishment" style="rounded=1;arcSize=20;strokeWidth=2;strokeColor=#FFFFFF;fillColor=#a20025;" vertex="1" parent="1">
+          <mxGeometry x="400" y="300" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="INV-P3" value="3.0 Update Stock Records" style="rounded=1;arcSize=20;strokeWidth=2;strokeColor=#FFFFFF;fillColor=#a20025;" vertex="1" parent="1">
+          <mxGeometry x="400" y="600" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="INV-P4" value="4.0 Audit &amp; Report" style="rounded=1;arcSize=20;strokeWidth=2;strokeColor=#FFFFFF;fillColor=#a20025;" vertex="1" parent="1">
+          <mxGeometry x="400" y="900" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="INV-DS1" value="D1: Inventory" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=2;whiteSpace=wrap;strokeColor=#FFFFFF;fillColor=#6a00ff;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="750" y="100" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="INV-DS2" value="D2: Reorder Logs" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=2;whiteSpace=wrap;strokeColor=#FFFFFF;fillColor=#6a00ff;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="854" y="286" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="INV-F1" value="Stock Level Data (read)" style="curved=1;startArrow=none;endArrow=block;rounded=0;strokeColor=#FFFFFF;" edge="1" parent="1" source="INV-DS1" target="INV-P1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="INV-F2" value="Low Stock Alert" style="curved=1;startArrow=none;endArrow=block;rounded=0;strokeColor=#FFFFFF;" edge="1" parent="1" source="INV-P1" target="INV-P2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="INV-F3" value="Purchase Requisition (data)" style="curved=1;startArrow=none;endArrow=block;rounded=0;strokeColor=#FFFFFF;" edge="1" parent="1" source="INV-P2" target="INV-E2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="INV-F4" value="Replenishment Request" style="curved=1;startArrow=none;endArrow=block;rounded=0;strokeColor=#FFFFFF;" edge="1" parent="1" source="INV-P2" target="INV-E1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="INV-F5" value="Stock Update (info)" style="curved=1;startArrow=none;endArrow=block;rounded=0;strokeColor=#FFFFFF;" edge="1" parent="1" source="INV-E1" target="INV-P3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="150" y="500" />
+              <mxPoint x="450" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="INV-F6" value="Inventory Update (Receipt)" style="curved=1;startArrow=none;endArrow=block;rounded=0;strokeColor=#FFFFFF;" edge="1" parent="1" source="INV-E3" target="INV-P3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="INV-F7" value="Inventory Update (Shipment)" style="curved=1;startArrow=none;endArrow=block;rounded=0;strokeColor=#FFFFFF;" edge="1" parent="1" source="INV-E4" target="INV-P3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="150" y="700" />
+              <mxPoint x="450" y="700" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="INV-F8" value="Updated Stock Data (write)" style="curved=1;startArrow=none;endArrow=block;rounded=0;strokeColor=#FFFFFF;" edge="1" parent="1" source="INV-P3" target="INV-DS1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="550" y="750" />
+              <mxPoint x="800" y="750" />
+              <mxPoint x="730" y="515" />
+              <mxPoint x="800" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="INV-F9" value="Inventory Query" style="curved=1;startArrow=none;endArrow=block;rounded=0;strokeColor=#FFFFFF;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="INV-E5" target="INV-P4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="INV-F10" value="Inventory Status Data" style="curved=1;startArrow=none;endArrow=block;rounded=0;strokeColor=#FFFFFF;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="INV-P4" target="INV-E5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="500" y="1000" />
+              <mxPoint x="150" y="1000" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="INV-F11" value="Financial Reports (Stock Reports)" style="curved=1;startArrow=none;endArrow=block;rounded=0;strokeColor=#FFFFFF;" edge="1" parent="1" source="INV-P4" target="INV-E6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="550" y="1000" />
+              <mxPoint x="950" y="1000" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="INV-F12" value="Audit Data (read)" style="curved=1;startArrow=none;endArrow=block;rounded=0;strokeColor=#FFFFFF;" edge="1" parent="1" source="INV-DS1" target="INV-P4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="866" y="497" />
+              <mxPoint x="800" y="800" />
+              <mxPoint x="500" y="800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="INV-FC1" value="New Reorder (write)" style="curved=1;startArrow=none;endArrow=block;rounded=0;strokeColor=#FFFFFF;" edge="1" parent="1" source="INV-P2" target="INV-DS2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
